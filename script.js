@@ -7,7 +7,7 @@ var daysBack = n - 1;
 var days = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 var daysFull = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
 var months = [
-  'January',
+  'Januaryy',
   'February',
   'March',
   'April',
