@@ -1,77 +1,27 @@
+/* These are CSS resets, they overwrite browsers' default styling */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font: 14px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
-  margin: 0;
   /* background: #333; */
   overflow: hidden;
 }
 
-.dateTimeWrapper {
-  background: #333;
-  border-bottom: 15px solid rgb(225, 0, 255);
-  background-color: #333;
-  color: white !important;
+ul{
+  list-style: none;
+}
+
+/* .dateTimeWrapper {
   height: 201px;
-  /* padding: 15px; */
 }
 
-.currentMonth {
-  display: inline;
-  color: #37bc9b !important;
-  text-shadow: 0 0 0 #00a82a;
-  font-size: 22px;
-  margin-top: 20px;
-}
-.currentYear {
-  display: inline;
-  padding-left: 5px;
-  color: #37bc9b !important;
-  text-shadow: 0 0 0 #37bc9b;
-  font-size: 22px;
-}
-.currentDay {
-  color: #37bc9b !important;
-  text-shadow: 0 0 0 #37bc9b;
-  font-size: 32px;
-  padding-top: 15px;
-}
-.currentTime {
-  font-size: 60px;
-  padding-bottom: 3px;
-  color: rgb(172, 240, 240);
-  padding-left: 55px;
-  line-height: 0;
-}
-.meaning {
-  margin-left: 5px;
-}
-
-.dateHolder {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  width: 100%;
-  padding-top: 10px;
-}
-.dateHolder li {
-  display: inline;
-  float: left;
-  width: 0;
-  text-align: center;
-}
-.dateHolder div {
-  padding: px;
-}
-.dateHolder .date {
-  color: whitesmoke;
-  font-size: 28px;
-}
-.dateHolder .day {
-  color: whitesmoke;
-  padding-top: 8px;
-}
-.dateCurrent {
-  color: #37bc9b !important;
-  text-shadow: 0 0 0 #37bc9b;
+.nts {
+  color: #37bc9b;
 }
 
 .center {
@@ -82,18 +32,126 @@ body {
   display: box;
   -webkit-box-align: center;
   -moz-box-align: center;
-  /* flex-align: center; */
   -webkit-box-pack: center;
   -moz-box-pack: center;
-  /* flex-pack: center; */
   font-size: 2.5em;
   color: rgb(138, 56, 56);
 }
 
-/* .nts {
+.center{
+  flex-align: center;
+  flex-pack: center;
+}
+ */
+
+/* My mojo */
+
+/* top section */
+
+.dateTimeWrapper{
+  padding: 20px 10px;
+  background: #333;
+  border-bottom: 15px solid rgb(225, 0, 255);
+  color: white;
+}
+
+.dateAndTime{
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid red;
+}
+
+.currentDateWrapper{
+  width: 20%;
+  min-width: 180px;
+  margin-left: 10%;
+}
+
+@media screen and (max-width: 530px){
+  .dateAndTime{
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .currentDateWrapper{
+    margin-left: 0;
+  }
+}
+
+.currentDay, .currentTime{
+  margin-top: 20px;
+}
+
+.currentYear, .currentMonth, .currentDay{
   color: #37bc9b;
-}.. */
+}
+
+.currentYear, .currentMonth{
+  display: inline-block;
+  font-size: 22px;
+}
+
+.currentYear, .currentDay{
+  text-shadow: 0 0 0 #37bc9b;
+}
+
+.currentYear{
+  margin-left: 10px;
+}
+
+.currentMonth{
+  text-shadow: 0 0 0 #00a82a;
+}
+
+.currentDay{
+  font-size: 32px;
+}
+
+.dateCurrent {
+  color: #37bc9b !important;
+  text-shadow: 0 0 0 #37bc9b;
+}
+
+.currentTime{
+  font-size: 60px;
+  color: rgb(172, 240, 240);
+}
+
+.meaning{
+  margin-left: 5px;
+}
+
+/* bottom section */
+
+.dateHolder{
+  width: 100%;
+  max-width: 1080px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.dateHolder li{
+  margin-top: 10px;
+  flex: 100px;
+  text-align: center;
+}
+
+.day, .date{
+  color: whitesmoke;
+}
+
+.date{
+  font-size: 28px;
+}
+
+
 
 #defaultCanvas0 {
   background-color: rgb(65, 134, 134);
 }
+
