@@ -60,7 +60,6 @@ ul{
   max-width: 1080px;
   margin: 0 auto;
   display: flex;
-  border: 1px solid red;
 }
 
 .currentDateWrapper{
@@ -132,7 +131,6 @@ ul{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  border: 1px solid red;
 }
 
 .dateHolder li{
