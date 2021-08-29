@@ -70,13 +70,6 @@ function setTime() {
   setTimeout(setTime, int);
 }
 
-var dd = 100 / daySpan;
-
-$(function () {
-  $('.dateHolder li').width(dd + '%');
-  $('.dateTimeWrapper').css('padding-left', dd / 2 + '%');
-});
-
 for (i = 0; i < daySpan; i++) {
   var nextDate = dat.addDays(i);
 
